@@ -1,0 +1,30 @@
+# FastAPI and server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Speech Processing
+faster-whisper>=0.10.0
+# TTS is optional - we use Twilio's built-in TTS for phone calls
+# Uncomment below if you need local TTS (requires Python < 3.12):
+# TTS>=0.20.0
+# torch>=2.0.0
+# torchaudio>=2.0.0
+
+# Phone Integration
+twilio==8.10.0
+
+# Audio Processing
+pydub==0.25.1
+wave==0.0.2
+
+# Database (for call logs)
+sqlalchemy==2.0.23
+
+# Utilities
+python-dotenv==1.0.0
+httpx==0.25.1
+aiofiles==23.2.1
+
