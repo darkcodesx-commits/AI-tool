@@ -1,0 +1,7 @@
+{
+  "name": "Aura AI Appointments",
+  "description": "Next-gen AI appointment platform featuring gravity-defying UI, real-time Voice AI, and intelligent scheduling for Indian businesses.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
