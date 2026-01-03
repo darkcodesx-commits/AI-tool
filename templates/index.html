@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Predictive AI Scheduler - Pro</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 80%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #007BFF; color: white; }
+    .best-slot { background-color: #90ee90; }
+    button { padding: 5px 10px; margin: 5px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<h1>Predictive AI Scheduler - Pro Dashboard</h1>
+<canvas id="confidenceChart" width="800" height="300"></canvas>
+
+<h3>Top Suggested Slots:</h3>
+<div id="bestSlots"></div>
+
+<h3>Appointments Table:</h3>
+<table id="appointmentsTable">
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Occupied</th>
+            <th>No-Show Probability</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
